@@ -12,6 +12,10 @@ if (command === "add") {
   console.log("Adding new note");
 } else if (command === "list") {
   console.log("Listing all notes");
+} else if (command === "read") {
+  console.log("Reading a note");
+} else if (command === "list") {
+  console.log("Removing a note");
 } else {
   console.log("Command not recognized");
 }
