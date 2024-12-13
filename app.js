@@ -7,7 +7,7 @@ const notes = require("./notes.js");
 
 // console.log(_.isString(true));
 // console.log(_.isString("Irakli"));
-var filteredArray = _.uniq(["Irakli", 1, "Irakli", 1, 2, 3, 4]);
+var filteredArray = _.uniq(["Ambroladze"]);
 console.log(filteredArray);
 
 // var res = notes.add(9, -2);
