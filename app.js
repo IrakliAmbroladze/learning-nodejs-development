@@ -9,6 +9,7 @@ const argv = yargs
     title: {
       describe: "Title of note",
       demand: true,
+      alias: "t",
     },
   })
   .help().argv;
