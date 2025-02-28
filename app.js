@@ -11,6 +11,11 @@ const argv = yargs
       demand: true,
       alias: "t",
     },
+    body: {
+      describe: "Body of note",
+      demand: true,
+      alias: "b",
+    },
   })
   .help().argv;
 var command = argv._[0];
