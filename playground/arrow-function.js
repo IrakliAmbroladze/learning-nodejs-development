@@ -1,5 +1,2 @@
-var square = (x) => {
-  var result = x * x;
-  return result;
-};
-console.log(9);
+var square = (x) => x * x;
+console.log(square(9));
