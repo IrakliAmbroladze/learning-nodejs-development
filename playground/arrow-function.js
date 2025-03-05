@@ -3,6 +3,9 @@ var user = {
   sayHi: () => {
     console.log(`Hi, I'm ${this.name}`);
   },
+  sayHiAlt() {
+    console.log(`Hi, I'm ${this.name}`);
+  },
 };
 
-user.sayHi();
+user.sayHiAlt();
