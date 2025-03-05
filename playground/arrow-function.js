@@ -4,8 +4,9 @@ var user = {
     console.log(`Hi, I'm ${this.name}`);
   },
   sayHiAlt() {
+    console.log(arguments);
     console.log(`Hi, I'm ${this.name}`);
   },
 };
 
-user.sayHiAlt();
+user.sayHiAlt(1, 2, 3);
