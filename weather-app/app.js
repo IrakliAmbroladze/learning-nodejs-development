@@ -16,13 +16,15 @@ const argv = yargs(hideBin(process.argv))
   .help()
   .alias("help", "h").argv;
 
+var encodedAddress = encodeURIComponent(argv.address);
+
+console.log(argv);
+
 const address = "1301 lombard street philadelphia";
 
 request(
   {
-    url: `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
-      address
-    )}&key=${process.env.API_KEY}`,
+    url: `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=${process.env.API_KEY}`,
     json: true,
   },
   (error, response, body) => {
