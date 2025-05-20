@@ -1,6 +1,20 @@
 import request from "request";
+import yargs from "yargs";
+import { hideBin } from "yargs/helpers";
 import dotenv from "dotenv";
 dotenv.config();
+
+const argv = yargs(hideBin(process.argv))
+  .options({
+    a: {
+      demand: true,
+      alias: "address",
+      describe: "address to fetch weather for",
+      string: true,
+    },
+  })
+  .help()
+  .alias("help", "h").argv;
 
 const address = "1301 lombard street philadelphia";
 
